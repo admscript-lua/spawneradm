@@ -389,9 +389,9 @@ end)
 -- ✅ RAYFIELD UI (YouTube + Pets Only)
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-    Name = "🔥 RAYZ HUB | Adopt Me",
+    Name = "🔥 Kaizen HUB | Adopt Me",
     LoadingTitle = "Loading Pet Spawner...",
-    LoadingSubtitle = "by insidious.xvi",
+    LoadingSubtitle = "by NeilDark",
     ConfigurationSaving = {Enabled = true, FolderName = "RayzHubAdoptMe"},
     KeySystem = false
 })
@@ -401,7 +401,7 @@ local petType = "FR"
 
 -- 📺 YouTube Tab
 local YouTubeTab = Window:CreateTab("📺 YouTube", 4483362458)
-YouTubeTab:CreateParagraph({Title = "⭐ SUBSCRIBE TO NEIL DARK ⭐", Content = "YouTube: @neildark7904"})
+YouTubeTab:CreateParagraph({Title = "⭐ YOUTUBE: NeilDark ⭐", Content = "YouTube: @neildark7904"})
 YouTubeTab:CreateButton({
     Name = "📋 Copy YouTube Link",
     Callback = function()
@@ -414,12 +414,12 @@ YouTubeTab:CreateButton({
 local PetsTab = Window:CreateTab("❤️ Pets", 4483362458)
 PetsTab:CreateParagraph({
     Title = "🐾 Pet Spawner",
-    Content = "Spawn → E(Equip) → RightClick(Ride/Fly) → Pick/Drop!"
+    Content = "Spawn → E(Equip) → RightClick(Ride/Fly)"
 })
 
 PetsTab:CreateInput({
     Name = "🔍 Pet Name",
-    PlaceholderText = "Dragon, Unicorn, Griffin...",
+    PlaceholderText = "Shadow Dragon, Unicorn, Griffin...",
     RemoveTextAfterFocusLost = false,
     Callback = function(input)
         petName = input
@@ -467,7 +467,7 @@ PetsTab:CreateButton({
         _G.RayzHub.createPet(petId, properties)
         Rayfield:Notify({
             Title = "✅ Spawning...",
-            Content = petName .. " " .. petType .. "\n✅ E=Equip | RightClick=Ride/Fly | Pick/Drop!",
+            Content = petName .. " " .. petType .. "\n✅ E=Equip | RightClick=Ride/Fly ",
             Duration = 4
         })
     end,
@@ -487,9 +487,9 @@ PetsTab:CreateButton({
 
 -- 🎉 Load Complete
 Rayfield:Notify({
-    Title = "🚀 RAYZ HUB LOADED!",
-    Content = "✅ FULL SYSTEM: Spawn/EQUIP/Ride/Fly/Pick/Drop!\nPress E → Right-click → Hold/Drop pets!",
+    Title = "🚀 KAIZEN HUB LOADED!",
+    Content = "✅ FULL SYSTEM: Spawn/EQUIP/Ride/Fly/ Functional pets!",
     Duration = 7
 })
 
-print("🔥 RAYZ HUB - COMPLETE pet system with Pick/Drop loaded!")
+print("🔥NeilDarkScript Successfully Loaded!")

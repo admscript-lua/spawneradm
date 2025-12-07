@@ -533,7 +533,7 @@ ScrollBarEnabled = true
 
 Window:EditOpenButton(
 {
-Title = "open RAYZ HUB",
+Title = "SCRIPT MENU",
 Icon = "rbxassetid://4483345998",
 CornerRadius = UDim.new(0, 16),
 StrokeThickness = 2,
@@ -583,7 +583,7 @@ Icon = "users",
 Callback = function()
 task.spawn(
 function()
-setclipboard("https://discord.gg/An5KYG8w6a")
+setclipboard("DISCORD NOT AVAILABLE')
 warn("Discord invite copied to clipboard!")
 end
 )

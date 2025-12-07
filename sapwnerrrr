@@ -583,8 +583,8 @@ Icon = "users",
 Callback = function()
 task.spawn(
 function()
-setclipboard("DISCORD NOT AVAILABLE')
-warn("Discord invite copied to clipboard!")
+setclipboard("https://www.youtube.com/@neildark7904")
+warn("SUBSCRIBE TO MY CHANNEL!")
 end
 )
 end

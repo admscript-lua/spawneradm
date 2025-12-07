@@ -1,6 +1,3 @@
--- 🔥 RAYZ HUB Adopt Me Pet Spawner 2025 (COMPLETE - Pick/Drop/Ride/Fly + No Discord)
--- FULL original functionality with pickup/drop system
-
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")

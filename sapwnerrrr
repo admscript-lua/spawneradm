@@ -546,10 +546,6 @@ Draggable = true
 
 Window:SetToggleKey(Enum.KeyCode.K)
 
-local petName = nil
-local petType = "FR"
-
-
 local PetsTab =
 Window:Tab(
 {
@@ -559,51 +555,41 @@ Desc = "Spawn pets"
 }
 )
 
-
--- ✅ NEW YOUTUBE TAB (PASTE HERE):
-local YouTubeTab =
+local DiscordTab =
 Window:Tab(
 {
-Title = "📺 YouTube",
-Icon = "play",
-Desc = "NeilDark Channel"
+Title = "Discord",
+Icon = "users",
+Desc = "Copy our Discord invite"
 }
 )
 
-YouTubeTab:Paragraph(
+local petName = nil
+local petType = "FR"
+
+DiscordTab:Paragraph(
 {
-Title = "⭐ SUBSCRIBE TO NEIL DARK ⭐",
-Desc = "YouTube: @neildark7904\nClick to copy channel!",
-Image = "play",
-Color = "Red"
+Title = "Join our Discord!",
+Desc = "Click the button below to copy the invite link",
+Image = "users",
+Color = "Blue"
 }
 )
 
-YouTubeTab:Button(
+DiscordTab:Button(
 {
-Title = "📋 Copy YouTube",
-Icon = "link",
+Title = "Copy Invite",
+Icon = "users",
 Callback = function()
 task.spawn(
 function()
-setclipboard("https://www.youtube.com/@neildark7904")
-warn("YouTube link copied! SUBSCRIBE!")
-WindUI:Notify(
-{
-Title = "✅ COPIED!",
-Content = "youtube.com/@neildark7904",
-Icon = "checkmark",
-Duration = 3
-}
-)
+setclipboard("https://discord.gg/An5KYG8w6a")
+warn("Discord invite copied to clipboard!")
 end
 )
 end
 }
 )
-
-
-
 
 PetsTab:Paragraph(
 {

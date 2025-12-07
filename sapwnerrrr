@@ -546,6 +546,10 @@ Draggable = true
 
 Window:SetToggleKey(Enum.KeyCode.K)
 
+local petName = nil
+local petType = "FR"
+
+
 local PetsTab =
 Window:Tab(
 {
@@ -553,58 +557,55 @@ Title = "Pets",
 Icon = "heart",
 Desc = "Spawn pets"
 }
+)
 
 
-local petName = nil
-local petType = "FR"
+-- ✅ NEW YOUTUBE TAB (PASTE HERE):
+local YouTubeTab =
+Window:Tab(
+{
+Title = "📺 YouTube",
+Icon = "play",
+Desc = "NeilDark Channel"
+}
+)
 
+YouTubeTab:Paragraph(
+{
+Title = "⭐ SUBSCRIBE TO NEIL DARK ⭐",
+Desc = "YouTube: @neildark7904\nClick to copy channel!",
+Image = "play",
+Color = "Red"
+}
+)
 
-local YouTubeTab = Window:Tab({
-    Title = "📺 YOUTUBE",
-    Icon = "play",
-    Desc = "NeilDark Channel"
-})
-
-YouTubeTab:Paragraph({
-    Title = "⭐ SUBSCRIBE TO NEIL DARK ⭐",
-    Desc = "YouTube: @neildark7904\nClick to copy channel link!",
-    Image = "play",
-    Color = "Red"
-})
-
-YouTubeTab:Button({
-    Title = "📋 Copy YouTube Link",
-    Icon = "link",
-    Callback = function()
-        setclipboard("https://www.youtube.com/@neildark7904")
-        WindUI:Notify({
-            Title = "✅ COPIED!",
-            Content = "https://youtube.com/@neildark7904",
-            Icon = "checkmark",
-            Duration = 3
-        })
-        print("🌟 OPEN YOUTUBE & SUBSCRIBE!")
-    end
-})
-
-YouTubeTab:Button({
-    Title = "🎥 Open in Browser",
-    Icon = "external-link",
-    Callback = function()
-        setclipboard("https://www.youtube.com/@neildark7904")
-        WindUI:Notify({
-            Title = "📱 Paste in Browser",
-            Content = "Ctrl+V → Enter",
-            Icon = "globe",
-            Duration = 3
-        })
-    end
-})
+YouTubeTab:Button(
+{
+Title = "📋 Copy YouTube",
+Icon = "link",
+Callback = function()
+task.spawn(
+function()
+setclipboard("https://www.youtube.com/@neildark7904")
+warn("YouTube link copied! SUBSCRIBE!")
+WindUI:Notify(
+{
+Title = "✅ COPIED!",
+Content = "youtube.com/@neildark7904",
+Icon = "checkmark",
+Duration = 3
+}
+)
+end
+)
+end
+}
+)
 
 
 
 
-
+PetsTab:Paragraph(
 {
 Title = "Pet Spawner",
 Desc = "Enter the pet name and choose pet type before spawning",

@@ -483,10 +483,10 @@ loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/do
 
 WindUI:Popup(
 {
-Title = "RAYZ HUB",
+Title = "KAIZEN HUB",
 Icon = "cuboid",
 IconThemed = true,
-Content = "hello this is adopt me visual enjoy make sure you join our sever for more updates",
+Content = "THIS A PET SPAWNER SCRIPT! MAKE SURE TO SUBSCRIBE TO MY CHANNEL!",
 Buttons = {
 {
 Title = "Cancel",

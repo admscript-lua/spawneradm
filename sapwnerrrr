@@ -553,45 +553,58 @@ Title = "Pets",
 Icon = "heart",
 Desc = "Spawn pets"
 }
-)
 
-local DiscordTab =
-Window:Tab(
-{
-Title = "Discord",
-Icon = "users",
-Desc = "Copy our Discord invite"
-}
-)
 
 local petName = nil
 local petType = "FR"
 
-DiscordTab:Paragraph(
-{
-Title = "Join our Discord!",
-Desc = "Click the button below to copy the invite link",
-Image = "users",
-Color = "Blue"
-}
-)
 
-DiscordTab:Button(
-{
-Title = "Copy Invite",
-Icon = "users",
-Callback = function()
-task.spawn(
-function()
-setclipboard("https://discord.gg/An5KYG8w6a")
-warn("Discord invite copied to clipboard!")
-end
-)
-end
-}
-)
+local YouTubeTab = Window:Tab({
+    Title = "📺 YOUTUBE",
+    Icon = "play",
+    Desc = "NeilDark Channel"
+})
 
-PetsTab:Paragraph(
+YouTubeTab:Paragraph({
+    Title = "⭐ SUBSCRIBE TO NEIL DARK ⭐",
+    Desc = "YouTube: @neildark7904\nClick to copy channel link!",
+    Image = "play",
+    Color = "Red"
+})
+
+YouTubeTab:Button({
+    Title = "📋 Copy YouTube Link",
+    Icon = "link",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@neildark7904")
+        WindUI:Notify({
+            Title = "✅ COPIED!",
+            Content = "https://youtube.com/@neildark7904",
+            Icon = "checkmark",
+            Duration = 3
+        })
+        print("🌟 OPEN YOUTUBE & SUBSCRIBE!")
+    end
+})
+
+YouTubeTab:Button({
+    Title = "🎥 Open in Browser",
+    Icon = "external-link",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@neildark7904")
+        WindUI:Notify({
+            Title = "📱 Paste in Browser",
+            Content = "Ctrl+V → Enter",
+            Icon = "globe",
+            Duration = 3
+        })
+    end
+})
+
+
+
+
+
 {
 Title = "Pet Spawner",
 Desc = "Enter the pet name and choose pet type before spawning",

@@ -513,9 +513,9 @@ until Confirmed
 local Window =
 WindUI:CreateWindow(
 {
-Title = "KAIZEN HUB",
+Title = "RAYZ HUB",
 Icon = "laptop",
-Author = "YOUTUBE:NeilDark",
+Author = "by insidious.xvi",
 Folder = "ChunkHubmm2",
 Size = UDim2.fromOffset(420, 350),
 Transparent = false,

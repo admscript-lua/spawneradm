@@ -1,11 +1,11 @@
--- 🔥 KAIZEN HUB ADOPT ME PET SPAWNER - FULL WORKING SCRIPT 🔥
--- Copy ENTIRE script → Paste in executor → WORKS INSTANTLY!
+-- 🔥 COMPLETE KAIZEN HUB PET SPAWNER - QUICK SPAWN REMOVED 🔥
+-- Copy this ENTIRE script and paste into your executor
 
 task.spawn(function()
-    local Confirmed = false
+    local Confirmed = false  -- Essential fix for popup
     
     pcall(function()
-        -- ===== CORE PET SYSTEM =====
+        -- ===== ADOPT ME PET SYSTEM CORE =====
         local load = require(game.ReplicatedStorage:WaitForChild("Fsys")).load
         set_thread_identity(2)
         local clientData = load("ClientData")
@@ -22,7 +22,7 @@ task.spawn(function()
         local mountedPet = nil
         local currentMountTrack = nil
 
-        -- Essential functions
+        -- Core pet functions with error protection
         local function updateData(key, action)
             pcall(function()
                 local data = clientData.get(key)
@@ -38,12 +38,27 @@ task.spawn(function()
             return HttpService:GenerateGUID(false)
         end
 
+        local function getPetModel(kind)
+            pcall(function()
+                if petModels[kind] then return petModels[kind] end
+                local streamed = downloader.promise_download_copy("Pets", kind):expect()
+                petModels[kind] = streamed
+            end)
+        end
+
+        local function findIndex(array, finder)
+            for index, value in pairs(array or {}) do
+                if finder(value, index) then return index end
+            end
+            return nil
+        end
+
         function GetPetByName(name)
             pcall(function()
                 local Loads = require(game.ReplicatedStorage.Fsys).load
                 local InventoryDB = Loads("InventoryDB")
                 for i, v in pairs(InventoryDB.pets or {}) do
-                    if v and v.name and v.name:lower() == name:lower() then
+                    if v and v.name:lower() == name:lower() then
                         return v.id
                     end
                 end
@@ -65,73 +80,71 @@ task.spawn(function()
                             id = id,
                             kind = item.kind,
                             newness_order = 0,
-                            properties = properties or {}
+                            properties = properties
                         }
                         newPets[uniqueId] = pet
                         inventory.pets = newPets
                         pets[uniqueId] = {data = pet, model = nil}
-                        return inventory
                     end
+                    return inventory
                 end)
             end)
             set_thread_identity(8)
-            return true
+            print("✅ Created pet:", properties.rp_name or "Unknown")
         end
 
-        -- Router interception
+        -- Router mocking for equip/ride/fly
         local oldGet = router.get
         local function createRemoteMock(callback)
-            return {
-                InvokeServer = function(_, ...) 
-                    pcall(callback, ...)
-                    return true, {action = "success"}
-                end,
-                FireServer = function(_, ...) 
-                    pcall(callback, ...)
-                end
-            }
+            return { InvokeServer = function(_, ...) return callback(...) end, FireServer = function(_, ...) return callback(...) end }
         end
 
-        local equipRemote = createRemoteMock(function(uniqueId)
+        local equipRemote = createRemoteMock(function(uniqueId) 
             local pet = pets[uniqueId]
-            if pet then print("🧸 Equipping:", pet.data.properties.rp_name or "Pet") end
+            if pet then print("Equipping pet:", uniqueId) end
+        end)
+        local unequipRemote = createRemoteMock(function(uniqueId) 
+            local pet = pets[uniqueId]
+            if pet then print("Unequipping pet:", uniqueId) end
         end)
 
         router.get = function(name)
-            if name == "ToolAPI/Equip" then return equipRemote end
-            if name == "ToolAPI/Unequip" then return equipRemote end
-            if name:find("AdoptAPI") then return createRemoteMock(function() end) end
+            if name:find("ToolAPI/Equip") then return equipRemote end
+            if name:find("ToolAPI/Unequip") then return unequipRemote end
+            if name:find("AdoptAPI") then 
+                return createRemoteMock(function() end)
+            end
             return oldGet(name)
         end
 
-        -- Clear existing pets
+        -- Clean existing pets
         pcall(function()
-            for _, wrapper in pairs(clientData.get("pet_char_wrappers") or {}) do
-                pcall(function() oldGet("ToolAPI/Unequip"):InvokeServer(wrapper.pet_unique) end)
+            for _, charWrapper in pairs(clientData.get("pet_char_wrappers") or {}) do
+                pcall(function() oldGet("ToolAPI/Unequip"):InvokeServer(charWrapper.pet_unique) end)
             end
         end)
 
-        -- ===== WINDUI GUI =====
+        -- ===== WINDUI GUI SYSTEM =====
         local petName = ""
-        local petType = "MFR"
+        local petType = "FR"
         
         local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
         
-        -- Loading popup
+        -- Startup Popup
         WindUI:Popup({
             Title = "🌟 KAIZEN HUB 🌟",
             Icon = "cuboid",
             IconThemed = true,
-            Content = "🔥 ADOPT ME PET SPAWNER\n✅ All pets • FR/NFR/MFR\n📺 SUBSCRIBE: NeilDark",
+            Content = "🔥 PET SPAWNER LOADED!\n✅ Make sure to SUBSCRIBE to NeilDark!\n🎮 Press K to toggle menu",
             Buttons = {
                 {
-                    Title = "❌ Close",
+                    Title = "❌ Cancel",
                     Callback = function() end,
                     Variant = "Secondary"
                 },
                 {
-                    Title = "🚀 LAUNCH HUB",
-                    Icon = "rocket",
+                    Title = "🚀 CONTINUE",
+                    Icon = "arrow-right",
                     Callback = function()
                         Confirmed = true
                     end,
@@ -142,30 +155,26 @@ task.spawn(function()
 
         repeat wait() until Confirmed
 
-        -- Main window
+        -- Main Window
         local Window = WindUI:CreateWindow({
-            Title = "🔥 KAIZEN HUB v2.0 🔥",
+            Title = "🔥 KAIZEN HUB 🔥",
             Icon = "laptop",
             Author = "YOUTUBE:NeilDark",
-            Folder = "KaizenHubAdoptMe",
-            Size = UDim2.fromOffset(460, 420),
-            Transparent = true,
+            Folder = "KaizenHub",
+            Size = UDim2.fromOffset(450, 380),
+            Transparent = false,
             Theme = "Dark",
-            User = {
-                Enabled = true,
-                Callback = function() end,
-                Anonymous = false
-            },
-            SideBarWidth = 170,
+            User = {Enabled = true, Callback = function() end, Anonymous = false},
+            SideBarWidth = 160,
             ScrollBarEnabled = true
         })
 
         Window:EditOpenButton({
-            Title = "📱 SCRIPT MENU",  -- Your exact request
+            Title = "📱 SCRIPT MENU",  -- Your requested text
             Icon = "rbxassetid://4483345998",
-            CornerRadius = UDim.new(0, 20),
-            StrokeThickness = 3,
-            Color = ColorSequence.new(Color3.fromHex("00ff88"), Color3.fromHex("ffffff")),
+            CornerRadius = UDim.new(0, 16),
+            StrokeThickness = 2,
+            Color = ColorSequence.new(Color3.fromHex("5787d2"), Color3.fromHex("ffffff")),
             OnlyMobile = false,
             Enabled = true,
             Draggable = true
@@ -173,48 +182,47 @@ task.spawn(function()
 
         Window:SetToggleKey(Enum.KeyCode.K)
 
-        -- YouTube Tab
-        local YTTab = Window:Tab({
-            Title = "📺 SUPPORT",
+        -- Discord/YouTube Tab
+        local DiscordTab = Window:Tab({
+            Title = "📺 YouTube",
             Icon = "users",
-            Desc = "NeilDark YouTube"
+            Desc = "Support the creator!"
         })
 
-        YTTab:Paragraph({
-            Title = "⭐ SUBSCRIBE FOR UPDATES",
-            Desc = "More scripts coming soon!\nClick to copy channel",
+        DiscordTab:Paragraph({
+            Title = "⭐ SUPPORT NEIL DARK ⭐",
+            Desc = "Subscribe for more scripts!\nClick below to copy channel link",
             Image = "users",
-            Color = "Green"
+            Color = "Blue"
         })
 
-        YTTab:Button({
-            Title = "📋 Copy YouTube Link",
+        DiscordTab:Button({
+            Title = "📋 Copy YouTube",
             Icon = "link",
             Callback = function()
                 setclipboard("https://www.youtube.com/@neildark7904")
                 WindUI:Notify({
-                    Title = "✅ COPIED!",
-                    Content = "NeilDark YouTube → Subscribe!",
+                    Title = "✅ Copied!",
+                    Content = "YouTube link copied to clipboard!",
                     Icon = "checkmark",
-                    Duration = 3
+                    Duration = 2
                 })
+                warn("🌟 SUBSCRIBE TO MY CHANNEL!")
             end
         })
 
-        -- Main Pets Tab
+        -- Pets Tab
         local PetsTab = Window:Tab({
-            Title = "🐾 PET SPAWNER",
+            Title = "🐾 PETS",
             Icon = "heart",
-            Desc = "Spawn legendary pets!"
+            Desc = "Spawn any pet instantly!"
         })
 
-        PetsTab:Section({Title = "🎯 MAIN SPAWNER", Color = "Blue"})
-
         PetsTab:Paragraph({
-            Title = "⚡ INSTANT PETS",
-            Desc = "Type name → Select type → Spawn!\nWorks: Dragon, Griffin, Unicorn, Phoenix...",
+            Title = "⚡ ULTRA PET SPAWNER",
+            Desc = "Enter pet name → Select type → SPAWN!\nWorks with Dragon, Griffin, Unicorn, etc.",
             Image = "sparkles",
-            Color = "Cyan"
+            Color = "Blue"
         })
 
         PetsTab:Input({
@@ -224,42 +232,42 @@ task.spawn(function()
             Placeholder = "Dragon, Griffin, Unicorn...",
             Callback = function(input)
                 petName = input
-                print("📝 Pet set:", petName)
+                print("📝 Pet name set:", petName)
             end
         })
 
         PetsTab:Dropdown({
-            Title = "⭐ Rarity",
+            Title = "⭐ Pet Type",
             Values = {"FR", "NFR", "MFR"},
             Multi = false,
-            Default = "MFR",
+            Default = "FR",
             Callback = function(value)
                 petType = value
-                print("⭐ Type:", petType)
+                print("⭐ Pet type:", petType)
             end
         })
 
         PetsTab:Button({
             Title = "🚀 SPAWN PET",
             Icon = "rocket",
-            Size = UDim2.fromOffset(220, 55),
+            Size = UDim2.fromOffset(200, 50),
             Callback = function()
-                if petName == "" or petName == " " then
+                if not petName or petName == "" then
                     WindUI:Notify({
                         Title = "❌ ERROR",
-                        Content = "Enter pet name first!",
-                        Icon = "x-circle",
+                        Content = "Enter a pet name first!",
+                        Icon = "shield-alert",
                         Duration = 3
                     })
                     return
                 end
-
+                
                 local petId = GetPetByName(petName)
                 if not petId then
                     WindUI:Notify({
-                        Title = "❌ NOT FOUND",
-                        Content = petName .. " doesn't exist!\nTry: Dragon, Griffin, Unicorn",
-                        Icon = "shield-alert",
+                        Title = "❌ PET NOT FOUND",
+                        Content = petName .. " doesn't exist!\nCheck spelling (Dragon, Griffin, etc.)",
+                        Icon = "x-circle",
                         Duration = 4
                     })
                     return
@@ -274,95 +282,25 @@ task.spawn(function()
                     ailments_completed = 0,
                     rp_name = petName
                 }
-
-                if petType == "NFR" then
+                
+                if petType == "NFR" then 
                     properties.neon = true
-                elseif petType == "MFR" then
-                    properties.mega_neon = true
+                elseif petType == "MFR" then 
+                    properties.mega_neon = true 
                 end
 
-                local success = createPet(petId, properties)
-                if success then
-                    WindUI:Notify({
-                        Title = "🎉 SPAWNED!",
-                        Content = petName .. " " .. petType .. " → Ready!",
-                        Icon = "sparkles",
-                        Duration = 4
-                    })
-                end
-            end
-        })
-
-        -- 🔥 QUICK SPAWN SECTION - FULLY WORKING
-        PetsTab:Section({Title = "👑 LEGENDARY QUICK SPAWN", Color = "Gold"})
-
-        local quickPets = {
-            {name = "Dragon", rarity = "MFR"},
-            {name = "Griffin", rarity = "MFR"},
-            {name = "Unicorn", rarity = "MFR"},
-            {name = "Phoenix", rarity = "MFR"},
-            {name = "Shadow Dragon", rarity = "MFR"}
-        }
-
-        for _, petData in ipairs(quickPets) do
-            PetsTab:Button({
-                Title = "⭐ " .. petData.name,
-                Icon = "crown",
-                Size = UDim2.fromOffset(200, 45),
-                Callback = function()
-                    local petId = GetPetByName(petData.name)
-                    if petId then
-                        createPet(petId, {
-                            mega_neon = true,
-                            rideable = true,
-                            flyable = true,
-                            rp_name = petData.name,
-                            pet_trick_level = 0,
-                            friendship_level = 999,
-                            age = 1
-                        })
-                        petName = petData.name
-                        petType = "MFR"
-                        WindUI:Notify({
-                            Title = "👑 LEGENDARY!",
-                            Content = petData.name .. " MFR spawned instantly!",
-                            Icon = "sparkles",
-                            Duration = 3
-                        })
-                    else
-                        WindUI:Notify({
-                            Title = "❌ Unavailable",
-                            Content = petData.name .. " not in your game",
-                            Duration = 2
-                        })
-                    end
-                end
-            })
-        end
-
-        -- Auto farm bonus
-        PetsTab:Section({Title = "🤖 AUTO FARM", Color = "Purple"})
-        PetsTab:Toggle({
-            Title = "Auto Dragon MFR",
-            Default = false,
-            Callback = function(state)
-                if state then
-                    spawn(function()
-                        _G.AutoDragon = true
-                        while _G.AutoDragon do
-                            wait(3)
-                            local id = GetPetByName("Dragon")
-                            if id then createPet(id, {mega_neon = true}) end
-                        end
-                    end)
-                else
-                    _G.AutoDragon = false
-                end
+                createPet(petId, properties)
+                WindUI:Notify({
+                    Title = "🎉 SUCCESS!",
+                    Content = petName .. " " .. petType .. " SPAWNED! ✨",
+                    Icon = "sparkles",
+                    Duration = 4
+                })
             end
         })
 
         print("✅ KAIZEN HUB FULLY LOADED!")
-        print("🎮 Toggle: K key | SCRIPT MENU button")
-        print("📺 YouTube: https://www.youtube.com/@neildark7904")
+        print("🎮 Press K to toggle | Click SCRIPT MENU")
+        print("📱 YouTube: https://www.youtube.com/@neildark7904")
     end)
 end)

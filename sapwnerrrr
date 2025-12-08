@@ -1,1 +1,492 @@
---[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local y={"\084\043\069\080\055\089\076\068\051\080\087\076\079\097\085\065\110\073\101\106\066\121\107\084\115\119\075\087\070\088\047\113\050\055\047\043\100\053\075\113\088\107\048\073\082\101\068\108\083\097\099\122\048\073\049\121\051\120\078\055\047\073\065\114\066\082\122\090\097\097\105\057\121\065\061\061";"\082\053\072\054\120\118\115\084\110\088\082\116\121\111\075\081";"\110\103\068\098\047\120\088\114\120\100\069\097\067\120\055\085\110\103\065\061";"\119\117\098\102\089\114\075\102\073\053\088\057\071\114\075\088";"\071\070\107\122\047\070\068\081","\104\050\106\090\119\113\078\088\113\074\122\061";"\076\068\089\051\054\089\084\067\098\118\079\047\117\121\082\061";"\118\075\117\120\053\089\061\061";"\086\067\103\061";"\068\080\055\084\043\111\088\118\089\070\067\088\048\098\069\080","\067\099\110\079\087\056\079\073\048\114\121\052\107\055\099\055\050\121\116\081\120\116\047\061";"\109\087\109\079\098\082\077\061";"\066\066\090\074\053\066\065\080\113\103\112\088";"\120\098\067\070\043\102\068\054\120\072\088\098\110\098\069\121";"\075\080\086\101\056\077\099\082\121\073\115\122\047\112\120\086\051\083\122\054\052\099\065\061";"\104\048\065\085\112\073\120\050\067\100\049\048";"\121\117\075\116\073\114\115\121\048\102\077\072\119\120\098\082\089\119\051\061","\099\084\077\067\047\116\078\066\109\086\077\088","\048\081\081\099\101\086\118\118\098\122\061\061";"\088\088\052\100\082\089\065\113\103\053\090\109\106\047\067\107\098\102\081\076";"\068\112\054\089\103\103\103\074\073\101\103\061","\100\068\047\118\055\072\088\054\047\066\052\053\085\101\090\053\103\115\074\048\106\108\074\077\118\110\065\057\074\117\048\067\118\053\086\087\116\086\104\050\117\109\080\114\104\110\043\107\078\048\116\071\051\114\081\087\054\122\061\061","\110\121\049\114\116\115\072\049\102\085\109\110","\104\108\101\056\105\065\061\061";"\071\102\098\085\120\102\077\116\071\120\098\113\075\098\050\080";"\071\099\097\081\052\119\071\112\119\053\107\122\120\102\109\055\070\114\074\061";"\085\069\102\061";"\116\073\088\113\055\104\048\087\071\106\100\069","\101\078\100\057\056\099\052\065\090\118\078\098\079\076\087\069\052\075\098\119\057\076\073\061","\072\050\070\110\089\118\110\084\090\089\061\061";"\047\100\073\102\120\085\056\097\068\102\050\083\082\098\075\054\082\122\061\061";"\089\119\051\116\089\088\069\102\098\088\055\101\082\114\088\119";"\084\079\075\099\071\122\061\061","\075\117\098\102\089\114\075\102\073\053\088\057\071\114\075\088","\052\066\079\065\056\108\098\084\081\090\051\084\089\074\061\061";"\067\116\117\104\070\090\067\081";"\069\106\050\074\073\053\074\061","\105\097\084\068\080\122\085\104","\078\119\107\078\047\070\116\061","\121\098\050\082\047\080\056\069\047\080\071\102\048\100\115\120","\098\053\050\101\067\099\098\081\052\103\071\085\071\100\071\049","\119\104\120\113\111\122\061\061";"\102\077\117\109";"\089\071\122\081\054\099\079\071\065\065\061\061","\081\049\078\065\081\110\068\043";"\120\110\110\099\068\115\087\065\118\065\061\061","\102\109\118\047\057\079\113\098\075\089\107\086";"\074\050\051\051";"\121\070\107\117\043\117\054\088\119\117\098\066\071\053\098\066";"\075\106\118\065\108\089\061\061";"\074\056\048\047\089\116\111\061";"\068\053\051\122\067\120\055\113\071\099\056\103\110\099\056\066\120\114\065\061","\089\080\104\087\079\087\068\052\052\098\122\061";"\069\100\069\089\120\074\061\061";"\102\065\055\100\072\074\103\084\084\111\047\061";"\049\066\106\115\065\119\110\057\082\107\104\050\049\108\102\075\109\057\056\086\103\043\086\066\090\055\098\056\066\056\102\056\081\047\072\115\113\089\061\061","\074\111\079\084\051\065\061\061","\051\085\076\056\055\078\073\073\083\107\086\043\055\110\073\111\118\047\086\118";"\048\084\088\068\073\101\067\103\048\103\075\114\043\055\069\116\089\070\077\061";"\076\068\051\103\073\089\061\061","\074\073\110\107\102\107\055\083","\057\104\065\074\066\050\050\119\052\079\085\050\110\065\061\061";"\090\048\087\053\098\078\076\113","\053\075\101\083";"\103\122\078\098\067\108\106\074\084\074\061\061";"\116\105\117\085\104\067\073\061";"\100\106\089\107\049\077\122\061","\048\053\079\097\110\120\068\119\121\101\071\072\120\098\067\053\043\111\065\061","\067\114\115\066\043\100\051\061","\048\088\088\099\121\103\098\067\047\053\056\050\098\103\077\102\070\065\061\061";"\048\114\068\079\121\103\107\103\043\088\050\066\110\053\088\120\068\122\061\061","\056\110\088\074\082\071\075\089","\079\099\069\121\103\056\047\061","\120\067\120\119\066\105\103\099";"\087\120\075\121\099\108\097\088";"\054\090\099\107\069\087\106\075\068\080\043\043\116\048\047\080","\119\106\088\113\116\048\080\082\079\065\069\116\068\099\099\081\115\111\077\068\071\089\050\079","\066\117\118\114\115\110\102\056\055\074\117\085";"\088\076\056\056\086\070\116\073\052\098\068\103\070\073\069\106\109\122\061\061";"\085\065\080\048\104\078\051\112";"\104\074\074\102","\090\049\079\061","\076\113\074\119\053\108\100\065\082\053\077\070\088\113\109\065\122\089\073\072";"\071\085\077\066\075\109\065\081\087\084\079\099\056\119\101\078\085\051\048\113\109\068\070\080\118\102\110\048\074\074\061\061";"\101\122\079\108\084\076\052\107\120\122\061\061","\118\110\087\109\090\065\061\061";"\070\050\072\112\078\113\082\061","\076\065\116\086\114\050\090\106\086\084\083\107\070\080\069\079\111\054\116\061","\053\051\097\115\049\065\119\061","\073\056\073\114\074\108\086\079\098\088\074\061","\114\105\104\072\097\088\119\113\066\108\081\090","\043\070\055\102\048\074\061\061";"\100\054\102\097";"\054\098\083\102\098\089\074\061","\118\102\057\070\073\089\061\061";"\074\053\087\084\077\106\048\087\054\088\070\111\103\054\068\086";"\076\098\108\111\076\052\074\099\077\084\103\121\077\076\069\090\048\098\066\077\070\121\056\089","\089\100\115\088\047\114\075\088\121\070\107\122\071\114\089\061";"\119\117\098\102\119\084\115\050\043\070\055\066\110\098\069\056\073\101\075\085\075\101\115\056\043\070\119\061";"\049\088\073\083\121\048\082\108\078\122\061\061","\071\111\122\107\047\118\067\116\110\080\098\057\052\103\097\049";"\054\106\055\043\073\122\112\047\117\056\122\061";"\070\050\111\049\117\047\090\088\089\077\099\081\121\065\061\061";"\056\081\100\112\084\118\100\071\057\065\106\089\071\065\061\061","\043\053\072\078\067\085\074\118\052\070\072\050\120\098\075\103\043\088\051\061";"\072\056\054\098\075\049\070\087\114\089\061\061","\100\049\088\077\079\119\110\089","\082\100\112\066\121\070\109\121\068\118\115\115\048\085\069\122\073\122\061\061";"\082\057\097\090\056\052\043\057\103\099\051\056\048\065\061\061","\067\117\072\056\071\099\068\112";"\070\117\114\108\072\118\116\061","\067\101\075\099\119\103\119\107\089\070\068\113\121\114\067\103\067\088\065\061","\102\114\082\065\107\087\051\097\053\052\103\061","\115\052\074\051\075\073\085\083\097\073\090\052","\117\057\097\120\111\066\111\114\047\075\082\057\049\055\089\061","\110\053\072\075\121\118\056\103\043\099\055\084\119\098\050\097\071\111\089\061","\047\087\077\104\049\065\066\106\051\089\061\061";"\090\050\089\047\107\118\050\117\071\120\049\114\053\089\061\061";"\071\099\055\057\043\099\119\061";"\089\100\115\088\047\114\075\088\098\117\088\083\067\099\109\100","\047\056\098\118\080\109\085\074\072\049\072\056\101\074\061\061","\084\077\086\081\084\052\078\108\051\112\111\051\050\114\121\102\078\122\061\061";"\119\120\069\088\075\070\050\097\048\070\098\100\043\102\055\113\071\080\111\061";"\065\108\105\070\079\057\053\050\120\070\049\086\121\085\121\074\109\049\103\082\111\116\087\085","\098\053\098\080\071\099\109\066\082\122\061\061","\075\053\088\083\067\103\067\050\073\101\068\102\089\117\056\050\043\099\089\061","\110\111\072\090\070\084\050\104\121\103\079\097\048\085\067\080";"\101\080\066\102\085\105\105\110\073\087\065\108\043\070\071\113\086\101\106\117\056\114\085\052\055\066\068\120\084\074\061\061";"\085\073\100\117\074\087\109\052","\079\078\114\107\070\074\107\097\066\065\061\061";"\068\103\055\119\047\088\067\086\120\098\071\116\071\098\119\116\052\084\051\061";"\057\103\087\074\113\112\113\075\098\086\111\061";"\053\122\111\106\077\121\098\054\069\111\105\110\103\083\082\078\054\071\052\114\052\075\112\089\082\074\067\114\105\101\076\048\106\122\061\061";"\088\065\109\088\107\119\057\100\065\067\113\047\097\089\061\061";"\065\056\076\089\108\068\069\072";"\105\057\054\114\119\070\109\122\115\049\106\065\101\069\056\070\103\056\057\068","\079\113\075\113\082\077\077\061","\049\067\103\074\066\098\087\115\051\121\068\054\118\053\102\061";"\105\119\069\111\049\054\055\047\068\102\106\086\056\106\079\061";"\067\076\084\043\050\074\056\105\081\101\088\117\043\122\061\061","\071\074\048\070";"\082\108\105\086\048\048\050\107\082\121\121\047","\073\104\099\114\122\057\113\110";"\089\117\097\104\043\053\119\061","\120\099\109\056\067\103\055\083\048\070\072\056\071\099\088\104\043\065\061\061","\057\112\114\101\080\097\050\076\122\085\050\122\052\051\070\070\076\074\117\106\097\099\072\048\056\114\078\116","\115\070\112\069\101\122\061\061";"\106\048\053\109\121\097\102\054\119\077\051\057\117\066\076\097\108\054\080\068\072\067\098\076\089\110\054\052\068\071\102\047\111\079\065\061";"\055\101\112\065\082\110\122\061","\109\047\121\072\105\090\112\103\067\122\061\061","\082\118\065\100\121\056\043\116\072\049\076\105\088\087\099\069\079\065\079\080\048\089\080\114\109\065\061\061";"\071\102\054\100\043\085\069\080\067\053\054\122\098\119\067\075","\051\120\069\105\054\088\097\071\103\075\047\074\103\089\084\054";"\111\110\050\119\107\043\120\107\048\101\068\115\076\115\107\122\122\066\105\082\113\065\061\061";"\054\057\047\067\049\104\109\076\090\086\081\053","\055\054\077\115\071\102\103\101\114\119\118\075","\047\080\067\069\119\070\116\066\119\098\111\102\075\119\071\119\073\074\061\061";"\113\115\081\049\081\109\088\120\073\074\061\061","\084\084\111\103\084\056\089\057","\080\077\102\078\117\053\069\101\072\047\082\061","\068\079\100\110\051\116\084\090\118\089\061\061";"\067\103\050\051\068\102\072\111\067\117\067\082\121\103\107\103","\098\099\102\071\107\079\116\061";"\050\099\067\056\077\090\089\076","\069\089\079\068\102\115\111\074\072\097\099\051";"\081\071\076\118\103\055\083\070\117\087\112\080\072\065\061\061";"\075\070\088\116\075\080\069\103\052\055\075\072\048\099\109\097\048\102\051\061";"\047\117\109\083\047\117\055\102","\069\068\108\053\056\117\097\086\099\114\071\054\087\080\051\061","\119\100\098\097\052\084\050\081\071\120\103\117\121\120\074\116","\076\083\049\073\107\098\103\057\076\077\089\061";"\119\100\075\104\073\074\061\061","\116\101\053\121\050\089\061\061";"\070\080\103\066\067\101\055\047\048\103\075\122\075\098\119\072\082\122\061\061","\075\053\107\084\119\100\067\082\067\053\055\068\120\070\047\072";"\082\102\075\050\101\065\061\061";"\105\048\087\111";"\065\100\083\087\122\078\047\061","\054\076\048\047\102\100\102\065\074\084\074\061";"\120\101\071\100\043\100\098\050\070\053\055\066\047\119\054\050\068\118\051\061";"\102\053\055\088\113\100\108\108\072\076\047\061","\100\101\070\100\054\052\103\061";"\099\120\071\080\077\099\108\075\067\116\076\100\067\071\121\111\110\087\056\073\115\067\106\084\107\074\061\061","\052\122\055\098\081\101\115\048\087\084\078\120\067\118\090\115\111\072\056\082\121\107\072\117\047\121\069\047\086\065\061\061","\087\115\055\052\080\109\097\057\082\077\051\098\110\074\061\061","\115\116\119\061";"\048\117\088\111\075\114\098\082\082\100\075\116\068\055\050\081";"\070\108\070\117\073\048\103\051\115\106\049\116\086\122\061\061","\079\057\115\116\099\074\118\084\055\087\111\061";"\043\085\103\061";"\111\043\047\075\102\106\087\104\105\118\075\051\107\120\102\061","\086\102\116\066\072\121\111\047\117\102\071\049\100\090\065\055\117\071\089\061";"\047\117\056\056\073\065\061\061";"\089\076\122\078\105\065\061\061","\102\108\101\066\081\072\080\078\067\077\099\120\085\120\055\085\073\108\088\117\050\074\061\061","\088\090\057\098\097\108\089\049\089\078\107\071";"\043\103\073\072\071\102\073\097\082\103\102\122\098\119\047\097\048\122\061\061";"\051\116\055\057\073\119\122\061";"\052\057\065\088\067\078\112\050\052\065\061\061";"\048\098\065\100\089\053\067\055\047\119\098\089\075\100\055\121","\069\065\108\090\081\106\051\061","\074\099\065\089\115\083\119\102\100\101\090\082\056\084\069\097\107\078\120\057\048\074\061\061","\077\078\075\049\051\052\070\118\121\102\103\047\121\078\116\061";"\108\071\053\053\043\101\079\061";"\081\122\097\082\067\104\097\068";"\075\099\098\118\071\084\115\104\110\089\061\061","\116\086\117\055\078\054\049\116\087\087\114\097\070\043\111\120\121\074\061\061";"\078\068\076\078\103\076\099\102\113\078\071\104\120\098\081\076","\081\065\099\088\122\103\067\043\053\047\114\047\080\103\079\068\054\065\061\061","\100\107\043\072\080\071\080\113\108\115\075\097\053\074\105\051\089\108\109\115\047\109\087\049\104\121\115\099\057\070\100\051\108\104\080\047\089\084\090\072\077\106\056\069\090\089\061\061","\089\111\067\118\120\070\056\081\120\070\075\120\048\114\050\114\073\065\061\061";"\082\043\087\074\104\072\082\083\099\043\068\078","\120\111\103\066\073\053\089\097\068\098\051\122\068\070\056\078\098\114\111\061","\119\119\048\053\088\074\061\061","\080\070\053\079\043\065\061\061","\121\117\115\082\121\099\075\078\047\114\088\055\043\100\067\099";"\043\099\109\056\067\084\068\102\073\053\088\083\067\122\061\061";"\079\065\049\071\074\122\061\061";"\078\090\069\068\074\065\061\061","\101\115\057\071\080\090\114\100\053\120\074\097\098\074\061\061","\082\103\109\079\073\102\047\118\073\117\056\103\052\120\055\106\073\074\061\061","\073\117\098\102\047\117\097\050\073\099\115\104\047\114\115\111","\111\108\098\108\113\112\085\052\056\122\049\054\097\107\077\061","\074\074\107\072\084\104\073\061","\082\119\090\076\116\073\069\097";"\081\104\122\074\052\109\055\076\071\077\098\043\079\070\049\088","\086\087\065\071\069\073\087\102\089\115\070\102\049\055\075\053\108\098\082\070\090\074\061\061";"\120\090\105\047\080\117\074\061","\089\079\069\081\074\049\082\122\109\078\085\101\116\107\088\068\051\069\055\065\111\089\061\061","\048\101\057\082\067\122\061\061","\114\072\109\079\067\070\116\061","\070\084\098\100\119\098\115\052\068\070\107\082\089\070\071\119\075\122\061\061","\052\099\055\104\121\119\051\066\089\072\050\089\052\084\075\089\071\102\077\061";"\071\071\083\077\067\051\122\071\121\108\070\075\110\078\074\097\051\049\053\102\099\089\061\061";"\121\088\101\114\110\077\067\047\067\083\103\061";"\073\055\051\118\098\072\065\066\110\120\069\116\098\084\074\118\067\119\089\061","\082\072\075\067\120\101\056\082\073\111\109\114\120\084\067\066\067\085\103\061";"\043\070\098\054\082\111\088\101\070\080\055\067\067\117\055\118\119\103\089\061","\083\117\072\085\102\103\052\084\105\102\101\108\053\112\106\104\084\070\103\053","\050\112\107\072\071\100\115\073\056\043\112\061";"\055\105\086\065\054\089\061\061";"\119\114\098\075\075\085\047\117\067\053\071\120\070\070\067\107\043\065\061\061","\048\119\088\119\047\111\050\067\121\055\075\057\068\117\088\053\070\065\061\061","\118\100\122\054\076\079\048\090\082\071\049\087";"\073\099\055\050\073\101\082\061","\048\103\122\072\073\088\050\111\071\103\103\122\119\072\050\078\119\122\061\061","\073\112\121\057\066\097\104\074","\051\076\084\084\119\103\043\079\118\088\106\112\122\047\054\070\120\075\074\100\102\074\061\061";"\068\110\082\087\049\120\111\099\077\082\080\053\118\117\114\048\087\109\106\082\074\106\077\061";"\055\101\112\084\097\077\076\106\084\050\098\087\103\089\061\061","\075\117\098\083\067\114\115\056\071\099\098\084\098\119\088\103","\104\055\051\050\070\090\101\104\099\102\047\107\056\121\069\099\085\090\052\111\079\111\083\118\074\068\118\121\107\110\116\073\100\078\098\088\103\056\118\112\121\052\081\067\082\100\077\049\118\109\071\120","\047\057\057\074\115\089\061\061";"\051\050\112\107\051\109\075\070\086\051\073\108\081\111\083\111\085\116\068\105";"\075\098\068\100\043\080\055\050\082\101\112\097\119\114\056\072\110\074\061\061","\043\072\069\107\121\118\088\119\043\119\072\054\071\102\109\121","\075\053\115\079\119\088\050\118\119\101\115\078\119\117\072\075";"\103\043\069\081\115\089\061\061","\056\089\043\099","\101\055\117\087\048\051\048\106";"\085\117\107\056\121\122\061\061";"\067\111\097\100\120\098\067\052\070\099\109\111\043\072\069\052";"\114\102\073\061";"\104\104\116\073\110\116\100\090","\084\102\087\089\119\043\065\061";"\073\099\068\056\043\099\122\061";"\073\117\075\114\121\103\075\081\071\103\047\097\121\119\073\066\073\065\061\061";"\101\097\100\043\106\112\067\121\049\117\067\056\118\051\077\071\047\120\105\066\071\057\116\051\120\074\048\051\115\074\107\112\085\072\088\052\082\054\109\121\070\071\057\074\074\082\100\108\101\089\061\061";"\043\080\067\085\071\101\065\118\073\102\072\119\089\114\050\051\043\085\074\061";"\051\056\102\082\043\102\048\087\102\084\074\061","\050\108\104\066\076\047\087\089\065\118\082\068\099\106\082\089";"\119\053\055\107\110\111\056\072\047\088\109\080\073\053\098\056\071\099\098\089\067\114\089\061","\098\099\055\054\073\099\098\066\051\103\075\088\071\099\098\080\071\099\098\111\051\089\061\061";"\107\115\072\100\085\074\061\061";"\074\078\108\108\048\105\102\067\070\080\082\061","\073\084\115\050\043\101\089\061";"\065\075\084\066\052\107\117\120\055\080\102\066\120\089\061\061","\073\114\073\097\047\118\082\122\110\103\075\104\047\102\075\088";"\056\105\108\108\051\122\061\061";"\051\051\085\115\102\043\118\054\066\105\116\061";"\089\102\067\066\047\070\072\088";"\073\053\055\083\067\099\109\054","\074\104\100\066\048\078\079\077\048\051\066\052\057\049\108\111\057\086\087\111\070\051\087\066\115\065\061\061","\049\070\105\121\053\068\077\118\085\122\061\061";"\087\115\119\055\056\110\111\072\102\115\119\061";"\083\104\072\079\049\075\120\079\074\116\121\068\107\108\102\061";"\090\106\069\052\068\068\102\047\085\065\061\061";"\047\111\077\066\119\111\098\115\068\100\082\102\067\111\068\050\052\120\103\061";"\090\105\101\052";"\103\050\090\048\057\102\048\084\085\083\065\061","\089\100\115\088\047\114\075\088\075\084\115\104\073\099\075\104\071\117\116\061";"\120\104\053\114\111\122\061\061","\122\090\085\054\077\075\119\047\108\067\121\076\054\074\061\061","\119\117\068\056\043\099\098\119\043\122\061\061","\103\048\089\078","\049\077\103\107\105\086\080\098\119\122\061\061","\117\055\055\075\106\114\051\066","\119\117\097\072\120\088\056\106\048\100\065\072\043\103\115\090","\067\100\068\072\047\065\061\061";"\066\073\103\047","\100\069\049\110\113\079\110\081\056\048\083\049\111\068\102\061","\121\114\068\069","\068\098\075\053\048\114\098\080\119\119\088\083\048\118\069\054\119\089\061\061";"\089\102\055\100\048\053\119\107\068\101\068\052\110\098\047\118";"\085\043\086\055\109\076\110\111\121\098\080\100\089\053\113\075\078\074\061\061","\103\121\065\053\054\047\077\050\090\043\048\056\056\065\061\061";"\075\103\097\111\120\103\111\072\119\119\068\066\070\055\068\121";"\073\120\047\100\121\098\098\116\082\101\074\122\070\053\109\100","\098\117\098\116\071\053\115\099\048\072\056\069\082\084\050\084\043\088\111\061","\055\119\051\076\055\114\051\061";"\121\080\098\103\120\103\068\083\073\088\055\104\073\070\119\100\075\089\061\061","\071\099\109\083\071\070\072\057\067\114\051\061","\050\077\112\081\048\057\116\061","\077\071\090\088\073\121\084\053","\070\109\082\109\050\101\089\099\053\089\061\061","\108\050\121\056\054\050\043\074\121\115\074\061";"\055\051\071\117\079\115\101\115\077\070\097\085";"\067\076\052\049\102\043\089\104\072\112\066\069\075\089\115\117\051\110\108\122","\047\107\118\122\057\099\069\069\074\107\106\089\051\099\112\061";"\054\047\122\083\054\055\119\066","\080\085\085\048\074\087\097\114\049\054\071\070\070\049\120\070\056\075\113\078";"\114\072\109\054\067\114\075\056\071\099\055\057\043\099\119\061","\118\119\080\122\097\099\114\101\100\087\048\081","\066\077\099\084\049\073\047\061";"\088\0
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local player = Players.LocalPlayer
+
+-- ✅ EXACT ORIGINAL FULL SYSTEM (Ride/Fly/Equip/Pick/Drop Working)
+task.spawn(function()
+    local load = require(ReplicatedStorage:WaitForChild("Fsys")).load
+    
+    set_thread_identity(2)
+    local clientData = load("ClientData")
+    local items = load("KindDB")
+    local router = load("RouterClient")
+    local downloader = load("DownloadClient")
+    local animationManager = load("AnimationManager")
+    local petRigs = load("new:PetRigs")
+    set_thread_identity(8)
+    
+    local petModels = {}
+    local pets = {}
+    local equippedPet = nil
+    local mountedPet = nil
+    local currentMountTrack = nil
+
+    local function updateData(key, action)
+        local data = clientData.get(key)
+        local clonedData = table.clone(data)
+        clientData.predict(key, action(clonedData))
+    end
+
+    local function getUniqueId()
+        return HttpService:GenerateGUID(false)
+    end
+
+    local function getPetModel(kind)
+        if petModels[kind] then return petModels[kind] end
+        local streamed = downloader.promise_download_copy("Pets", kind):expect()
+        petModels[kind] = streamed
+        return streamed
+    end
+
+    -- ✅ EXACT ORIGINAL createPet
+    function _G.RayzHub_createPet(id, properties)
+        local uniqueId = getUniqueId()
+        local pet = nil
+        
+        set_thread_identity(2)
+        updateData("inventory", function(inventory)
+            local newPets = table.clone(inventory.pets)
+            local item = items[id]
+            pet = {
+                unique = uniqueId,
+                category = "pets",
+                id = id,
+                kind = item.kind,
+                newness_order = 0,
+                properties = properties
+            }
+            newPets[uniqueId] = pet
+            inventory.pets = newPets
+            return inventory
+        end)
+        
+        set_thread_identity(8)
+        pets[uniqueId] = {data = pet, model = nil}
+        return pet
+    end
+
+    local function neonify(model, entry)
+        local petModel = model:FindFirstChild("PetModel")
+        if not petModel then return end
+        for neonPart, configuration in pairs(entry.neon_parts) do
+            local trueNeonPart = petRigs.get(petModel).get_geo_part(petModel, neonPart)
+            trueNeonPart.Material = configuration.Material
+            trueNeonPart.Color = configuration.Color
+        end
+    end
+
+    local function addPetWrapper(wrapper)
+        updateData("pet_char_wrappers", function(petWrappers)
+            wrapper.unique = #petWrappers + 1
+            wrapper.index = #petWrappers + 1
+            petWrappers[#petWrappers + 1] = wrapper
+            return petWrappers
+        end)
+    end
+
+    local function addPetState(state)
+        updateData("pet_state_managers", function(petStates)
+            petStates[#petStates + 1] = state
+            return petStates
+        end)
+    end
+
+    local function findIndex(array, finder)
+        for index, value in pairs(array) do
+            if finder(value, index) then return index end
+        end
+        return nil
+    end
+
+    local function removePetWrapper(uniqueId)
+        updateData("pet_char_wrappers", function(petWrappers)
+            local index = findIndex(petWrappers, function(wrapper)
+                return wrapper.pet_unique == uniqueId
+            end)
+            if not index then return petWrappers end
+            table.remove(petWrappers, index)
+            for wrapperIndex, wrapper in pairs(petWrappers) do
+                wrapper.unique = wrapperIndex
+                wrapper.index = wrapperIndex
+            end
+            return petWrappers
+        end)
+    end
+
+    local function removePetState(uniqueId)
+        local pet = pets[uniqueId]
+        if not pet or not pet.model then return end
+        updateData("pet_state_managers", function(petStates)
+            local index = findIndex(petStates, function(state)
+                return state.char == pet.model
+            end)
+            if not index then return petStates end
+            table.remove(petStates, index)
+            return petStates
+        end)
+    end
+
+    local function clearPetState(uniqueId)
+        local pet = pets[uniqueId]
+        if not pet or not pet.model then return end
+        updateData("pet_state_managers", function(states)
+            local index = findIndex(states, function(state)
+                return state.char == pet.model
+            end)
+            if not index then return states end
+            local clonedStates = table.clone(states)
+            clonedStates[index] = table.clone(clonedStates[index])
+            clonedStates[index].states = {}
+            return clonedStates
+        end)
+    end
+
+    local function setPetState(uniqueId, id)
+        local pet = pets[uniqueId]
+        if not pet or not pet.model then return end
+        updateData("pet_state_managers", function(states)
+            local index = findIndex(states, function(state)
+                return state.char == pet.model
+            end)
+            if not index then return states end
+            local clonedStates = table.clone(states)
+            clonedStates[index] = table.clone(clonedStates[index])
+            clonedStates[index].states = {{id = id}}
+            return clonedStates
+        end)
+    end
+
+    local function attachPlayerToPet(pet)
+        local character = player.Character
+        if not character or not character.PrimaryPart then return false end
+        local ridePosition = pet:FindFirstChild("RidePosition", true)
+        if not ridePosition then return false end
+
+        local sourceAttachment = Instance.new("Attachment")
+        sourceAttachment.Parent = ridePosition
+        sourceAttachment.Position = Vector3.new(0, 1.237, 0)
+        sourceAttachment.Name = "SourceAttachment"
+
+        local stateConnection = Instance.new("RigidConstraint")
+        stateConnection.Name = "StateConnection"
+        stateConnection.Attachment0 = sourceAttachment
+        stateConnection.Attachment1 = character.PrimaryPart.RootAttachment
+        stateConnection.Parent = character
+        return true
+    end
+
+    local function clearPlayerState()
+        updateData("state_manager", function(state)
+            local clonedState = table.clone(state)
+            clonedState.states = {}
+            clonedState.is_sitting = false
+            return clonedState
+        end)
+    end
+
+    local function setPlayerState(id)
+        updateData("state_manager", function(state)
+            local clonedState = table.clone(state)
+            clonedState.states = {{id = id}}
+            clonedState.is_sitting = true
+            return clonedState
+        end)
+    end
+
+    local function unmount(uniqueId)
+        local pet = pets[uniqueId]
+        if not pet or not pet.model then return end
+        if currentMountTrack then
+            currentMountTrack:Stop()
+            currentMountTrack:Destroy()
+        end
+        local sourceAttachment = pet.model:FindFirstChild("SourceAttachment", true)
+        if sourceAttachment then sourceAttachment:Destroy() end
+        if player.Character then
+            for _, d in pairs(player.Character:GetDescendants()) do
+                if d:IsA("BasePart") and d:GetAttribute("HaveMass") then
+                    d.Massless = false
+                end
+            end
+        end
+        clearPetState(uniqueId)
+        clearPlayerState()
+        pet.model:ScaleTo(1)
+        mountedPet = nil
+    end
+
+    local function mount(uniqueId, playerState, petState)
+        local pet = pets[uniqueId]
+        if not pet or not pet.model then return end
+        local playerChar = player.Character
+        if not playerChar or not playerChar.PrimaryPart then return end
+        mountedPet = uniqueId
+        setPetState(uniqueId, petState)
+        setPlayerState(playerState)
+        pet.model:ScaleTo(2)
+        attachPlayerToPet(pet.model)
+        currentMountTrack = playerChar.Humanoid.Animator:LoadAnimation(animationManager.get_track("PlayerRidingPet"))
+        playerChar.Humanoid.Sit = true
+        for _, d in pairs(playerChar:GetDescendants()) do
+            if d:IsA("BasePart") and d.Massless == false then
+                d.Massless = true
+                d:SetAttribute("HaveMass", true)
+            end
+        end
+        currentMountTrack:Play()
+    end
+
+    local function fly(uniqueId)
+        mount(uniqueId, "PlayerFlyingPet", "PetBeingFlown")
+    end
+    local function ride(uniqueId)
+        mount(uniqueId, "PlayerRidingPet", "PetBeingRidden")
+    end
+
+    local function unequip(item)
+        local pet = pets[item.unique]
+        if not pet or not pet.model then return end
+        unmount(item.unique)
+        removePetWrapper(item.unique)
+        removePetState(item.unique)
+        pet.model:Destroy()
+        pet.model = nil
+        equippedPet = nil
+    end
+
+    local function equip(item)
+        if equippedPet then unequip(equippedPet) end
+        local petModel = getPetModel(item.kind):Clone()
+        petModel.Parent = workspace
+        pets[item.unique].model = petModel
+        if item.properties.neon or item.properties.mega_neon then
+            neonify(petModel, items[item.kind])
+        end
+        equippedPet = item
+        addPetWrapper({
+            char = petModel,
+            mega_neon = item.properties.mega_neon,
+            neon = item.properties.neon,
+            player = player,
+            entity_controller = player,
+            controller = player,
+            rp_name = item.properties.rp_name or "",
+            pet_trick_level = item.properties.pet_trick_level,
+            pet_unique = item.unique,
+            pet_id = item.id,
+            location = {full_destination_id = "housing", destination_id = "housing", house_owner = player},
+            pet_progression = {friendship_level = item.properties.friendship_level, age = item.properties.age, percentage = 0},
+            are_colors_sealed = false,
+            is_pet = true
+        })
+        addPetState({
+            char = petModel,
+            player = player,
+            store_key = "pet_state_managers",
+            is_sitting = false,
+            chars_connected_to_me = {},
+            states = {}
+        })
+    end
+
+    -- ✅ FULL REMOTE MOCKING (Equip/Unequip/Ride/Fly/Unmount/Pick/Drop)
+    local oldGet = router.get
+    local function createRemoteFunctionMock(callback)
+        return {InvokeServer = function(_, ...) return callback(...) end}
+    end
+    local function createRemoteEventMock(callback)
+        return {FireServer = function(_, ...) return callback(...) end}
+    end
+
+    local equipRemote = createRemoteFunctionMock(function(uniqueId, metadata)
+        local pet = pets[uniqueId]
+        if not pet then return end
+        equip(pet.data)
+        return true, {action = "equip", is_server = true}
+    end)
+    
+    local unequipRemote = createRemoteFunctionMock(function(uniqueId)
+        local pet = pets[uniqueId]
+        if not pet then return end
+        unequip(pet.data)
+        return true, {action = "unequip", is_server = true}
+    end)
+    
+    local rideRemote = createRemoteFunctionMock(function(item)
+        ride(item.pet_unique)
+    end)
+    
+    local flyRemote = createRemoteFunctionMock(function(item)
+        fly(item.pet_unique)
+    end)
+    
+    local unmountRemoteFunction = createRemoteFunctionMock(function()
+        unmount(mountedPet)
+    end)
+    
+    local unmountRemoteEvent = createRemoteEventMock(function()
+        unmount(mountedPet)
+    end)
+
+    -- ✅ PICKUP/DROP PETS (Hold/Drop functionality)
+    local pickupRemote = createRemoteFunctionMock(function(uniqueId)
+        local pet = pets[uniqueId]
+        if not pet or not pet.model then return end
+        if equippedPet then unequip(equippedPet) end
+        equippedPet = pet.data
+        pet.model.Parent = player.Character
+        pet.model:SetPrimaryPartCFrame(player.Character.HumanoidRootPart.CFrame * CFrame.new(2, 0, 0))
+        return true, {action = "pickup", is_server = true}
+    end)
+    
+    local dropRemote = createRemoteFunctionMock(function(uniqueId)
+        local pet = pets[uniqueId]
+        if not pet or not pet.model then return end
+        pet.model.Parent = workspace
+        pet.model:SetPrimaryPartCFrame(player.Character.HumanoidRootPart.CFrame * CFrame.new(3, 0, 0))
+        return true, {action = "drop", is_server = true}
+    end)
+
+    router.get = function(name)
+        if name == "ToolAPI/Equip" then return equipRemote end
+        if name == "ToolAPI/Unequip" then return unequipRemote end
+        if name == "AdoptAPI/RidePet" then return rideRemote end
+        if name == "AdoptAPI/FlyPet" then return flyRemote end
+        if name == "AdoptAPI/ExitSeatStatesYield" then return unmountRemoteFunction end
+        if name == "AdoptAPI/ExitSeatStates" then return unmountRemoteEvent end
+        if name == "PetAPI/PickupPet" then return pickupRemote end
+        if name == "PetAPI/DropPet" then return dropRemote end
+        return oldGet(name)
+    end
+
+    -- Clear existing pets
+    for _, charWrapper in pairs(clientData.get("pet_char_wrappers") or {}) do
+        pcall(function()
+            oldGet("ToolAPI/Unequip"):InvokeServer(charWrapper.pet_unique)
+        end)
+    end
+
+    -- EXPOSE FUNCTIONS FOR UI
+    _G.RayzHub = {
+        createPet = _G.RayzHub_createPet,
+        GetPetByName = function(name)
+            local Loads = require(ReplicatedStorage.Fsys).load
+            local InventoryDB = Loads("InventoryDB")
+            for i, v in pairs(InventoryDB.pets) do
+                if v.name:lower() == name:lower() then
+                    return v.id
+                end
+            end
+            return false
+        end
+    }
+end)
+
+-- ✅ RAYFIELD UI (YouTube + Pets Only)
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+    Name = "🔥 Kaizen HUB | Adopt Me",
+    LoadingTitle = "Loading Pet Spawner...",
+    LoadingSubtitle = "by NeilDark",
+    ConfigurationSaving = {Enabled = true, FolderName = "RayzHubAdoptMe"},
+    KeySystem = false
+})
+
+local petName = ""
+local petType = "FR"
+
+-- 📺 YouTube Tab
+local YouTubeTab = Window:CreateTab("📺 YouTube", 4483362458)
+YouTubeTab:CreateParagraph({Title = "⭐ YOUTUBE: NeilDark ⭐", Content = "YouTube: @neildark7904"})
+YouTubeTab:CreateButton({
+    Name = "📋 Copy YouTube Link",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@neildark7904")
+        Rayfield:Notify({Title = "✅ COPIED!", Content = "youtube.com/@neildark7904", Duration = 3})
+    end,
+})
+
+-- ❤️ Pets Tab
+local PetsTab = Window:CreateTab("❤️ Pets", 4483362458)
+PetsTab:CreateParagraph({
+    Title = "🐾 Pet Spawner",
+    Content = "Spawn → E(Equip) → RightClick(Ride/Fly)"
+})
+
+PetsTab:CreateInput({
+    Name = "🔍 Pet Name",
+    PlaceholderText = "Shadow Dragon, Unicorn, Griffin...",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(input)
+        petName = input
+        print("Pet name:", input)
+    end,
+})
+
+PetsTab:CreateDropdown({
+    Name = "✨ Type",
+    Options = {"FR", "NFR", "MFR"},
+    CurrentOption = {"FR"},
+    Callback = function(Option)
+        petType = Option[1]
+        print("Pet type:", petType)
+    end,
+})
+
+PetsTab:CreateButton({
+    Name = "🚀 Spawn Pet",
+    Callback = function()
+        if not petName or petName == "" then
+            Rayfield:Notify({Title = "❌ Error", Content = "Enter pet name!", Duration = 2})
+            return
+        end
+        
+        local petId = _G.RayzHub.GetPetByName(petName)
+        if not petId then
+            Rayfield:Notify({Title = "❌ Error", Content = "Pet Not Found!", Duration = 2})
+            return
+        end
+        
+        local properties = {
+            pet_trick_level = 0,
+            rideable = true,
+            flyable = true,
+            friendship_level = 0,
+            age = 1,
+            ailments_completed = 0,
+            rp_name = ""
+        }
+        
+        if petType == "NFR" then properties.neon = true
+        elseif petType == "MFR" then properties.mega_neon = true end
+        
+        _G.RayzHub.createPet(petId, properties)
+        Rayfield:Notify({
+            Title = "✅ Spawning...",
+            Content = petName .. " " .. petType .. "\n✅ E=Equip | RightClick=Ride/Fly ",
+            Duration = 4
+        })
+    end,
+})
+
+PetsTab:CreateButton({
+    Name = "🧹 Clear All Pets",
+    Callback = function()
+        local clientData = require(ReplicatedStorage.Fsys).load("ClientData")
+        clientData.predict("inventory", function(inventory)
+            inventory.pets = {}
+            return inventory
+        end)
+        Rayfield:Notify({Title = "✅ Cleared!", Content = "All pets removed!", Duration = 2})
+    end,
+})
+
+-- 🎉 Load Complete
+Rayfield:Notify({
+    Title = "🚀 KAIZEN HUB LOADED!",
+    Content = "✅ FULL SYSTEM: Spawn/EQUIP/Ride/Fly/ Functional pets!",
+    Duration = 7
+})
+
+print("🔥NeilDarkScript Successfully Loaded!")
